@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #232730;
+    position: relative;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.dotel {
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.--red {
+    background-color: #f45690;
+}
+.--active {
+    transform: scale(1.4);
+    background-color: #4fc3dc;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+}
+
+.--super-active {
+    transform: scale(3);
+    background-color: #4fc3dc;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+}
+
+.counter {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
